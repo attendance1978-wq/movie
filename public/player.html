@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Player</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="player-container">
+        <!-- Video Player -->
+        <div class="video-container">
+            <video id="videoPlayer" controls crossorigin="anonymous">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Movie Info -->
+        <div class="movie-info">
+            <h1 id="movieTitle">Loading...</h1>
+            <div class="movie-meta">
+                <span id="movieYear"></span>
+                <span id="movieDuration"></span>
+                <span id="movieRating"></span>
+            </div>
+            <p id="movieDescription"></p>
+            <div class="movie-actions">
+                <button id="playBtn" class="btn-primary">
+                    <i class="fas fa-play"></i> Play
+                </button>
+                <button id="favoriteBtn" class="btn-secondary">
+                    <i class="far fa-heart"></i> Add to Favorites
+                </button>
+                <button id="backBtn" class="btn-secondary">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </button>
+            </div>
+        </div>
+
+        <!-- Recommendations -->
+        <div class="recommendations">
+            <h3>You Might Also Like</h3>
+            <div class="movie-grid" id="recommendations">
+                <!-- Recommendations will be loaded here -->
+            </div>
+        </div>
+
+        <!-- Reviews -->
+        <div class="reviews-section">
+            <h3>Reviews</h3>
+            <div class="add-review">
+                <h4>Add Your Review</h4>
+                <div class="rating">
+                    <span class="star" data-rating="1">☆</span>
+                    <span class="star" data-rating="2">☆</span>
+                    <span class="star" data-rating="3">☆</span>
+                    <span class="star" data-rating="4">☆</span>
+                    <span class="star" data-rating="5">☆</span>
+                </div>
+                <textarea id="reviewText" placeholder="Write your review here..."></textarea>
+                <button id="submitReview" class="btn-primary">Submit Review</button>
+            </div>
+            <div id="reviewsList">
+                <!-- Reviews will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/auth.js"></script>
+    <script src="/js/player.js"></script>
+</body>
+</html>

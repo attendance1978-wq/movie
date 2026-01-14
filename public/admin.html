@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Movie Stream</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <h1 class="logo">Admin Panel</h1>
+                <div class="nav-links">
+                    <button class="tab-btn active" data-tab="dashboard">Dashboard</button>
+                    <button class="tab-btn" data-tab="movies">Movies</button>
+                    <button class="tab-btn" data-tab="upload">Upload</button>
+                    <button class="tab-btn" data-tab="users">Users</button>
+                </div>
+            </div>
+            <div class="nav-right">
+                <button id="adminLogout" class="btn-secondary">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="admin-main">
+        <!-- Dashboard Tab -->
+        <div id="dashboard" class="tab-content active">
+            <h2>Dashboard</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total Movies</h3>
+                    <p id="totalMovies">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Users</h3>
+                    <p id="totalUsers">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Views</h3>
+                    <p id="totalViews">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Storage Used</h3>
+                    <p id="storageUsed">0 GB</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Movies Management Tab -->
+        <div id="movies" class="tab-content">
+            <h2>Movie Management</h2>
+            <div class="search-controls">
+                <input type="text" id="searchMovies" placeholder="Search movies...">
+                <select id="filterGenre">
+                    <option value="">All Genres</option>
+                </select>
+            </div>
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Genre</th>
+                            <th>Year</th>
+                            <th>Rating</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="moviesTable">
+                        <!-- Movies will be loaded here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Upload Tab -->
+        <div id="upload" class="tab-content">
+            <h2>Upload Movie</h2>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="movieTitle">Title *</label>
+                        <input type="text" id="movieTitle" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="movieYear">Year</label>
+                        <input type="number" id="movieYear" min="1900" max="2024">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="movieGenre">Genre *</label>
+                    <input type="text" id="movieGenre" placeholder="e.g., Action, Drama, Comedy" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="movieDescription">Description</label>
+                    <textarea id="movieDescription" rows="3"></textarea>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="movieDirector">Director</label>
+                        <input type="text" id="movieDirector">
+                    </div>
+                    <div class="form-group">
+                        <label for="movieCast">Cast</label>
+                        <input type="text" id="movieCast" placeholder="e.g., Actor1, Actor2, Actor3">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="movieDuration">Duration (minutes)</label>
+                    <input type="number" id="movieDuration" min="1">
+                </div>
+                
+                <div class="form-group">
+                    <label for="movieFile">Video File *</label>
+                    <input type="file" id="movieFile" accept="video/*" required>
+                    <small>Max file size: 1GB. Supported formats: MP4, MOV, AVI, MKV, WebM</small>
+                </div>
+                
+                <button type="submit" class="btn-primary">
+                    <i class="fas fa-upload"></i> Upload Movie
+                </button>
+                <div id="uploadProgress" class="progress-bar" style="display: none;">
+                    <div class="progress-fill"></div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Users Tab -->
+        <div id="users" class="tab-content">
+            <h2>User Management</h2>
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>Joined</th>
+                            <th>Admin</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="usersTable">
+                        <!-- Users will be loaded here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/auth.js"></script>
+    <script src="/js/admin.js"></script>
+</body>
+</html>
