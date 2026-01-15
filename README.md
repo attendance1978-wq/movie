@@ -49,10 +49,15 @@ cd movie-streaming-system
 ## 📸 Screenshots
 
 ### Screenshot 1
-![Screenshot (42)](https://raw.githubusercontent.com/attendance1978-wq/movie/main/Screenshot%20(42).png)
+## 📸 Screenshots
+
+### Screenshot 1
+![Screenshot (41)](https://raw.githubusercontent.com/attendance1978-wq/movie/main/Screenshot%20(41).png)
 
 ### Screenshot 2
-![Screenshot (43)](https://raw.githubusercontent.com/attendance1978-wq/movie/main/Screenshot%20(43).png)
+![Screenshot (42)](https://raw.githubusercontent.com/attendance1978-wq/movie/main/Screenshot%20(42).png)
+
+
 
 
 
