@@ -45,5 +45,10 @@ cd movie-streaming-system
 
 ```
 ## Screebshot
-![Screenshot](https://github.com/attendance1978-wq/movie/Screenshot(43).png?raw=true)
-![Screenshot](https://github.com/attendance1978-wq/movie/Screenshot(42).png?raw=true)
+## 📸 Screenshots
+
+### Home Page
+![screenshot](https://raw.githubusercontent.com/attendance1978-wq/movie/main/public/img/Screenshot%20(42).png)
+![screenshot](https://raw.githubusercontent.com/attendance1978-wq/movie/main/public/img/Screenshot%20(43).png)
+
+
