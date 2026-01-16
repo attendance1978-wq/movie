@@ -58,10 +58,8 @@ cd movie-streaming-system
 ![Screenshot (42)](https://raw.githubusercontent.com/attendance1978-wq/movie/main/Screenshot%20(42).png)
 
 ## demo videos here
-<video width="640" controls>
-  <source src="demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[Play Demo Video](https://github.com/attendance1978-wq/movie/raw/main/demo.mp4)
+
 
 
 
