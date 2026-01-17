@@ -44,11 +44,6 @@ git clone <repository-url>
 cd movie-streaming-system
 
 ```
-## Screebshot
-## 📸 Screenshots
-## 📸 Screenshots
-
-### Screenshot 1
 ## 📸 Screenshots
 
 ### Screenshot 1
@@ -59,6 +54,7 @@ cd movie-streaming-system
 
 ## demo videos here
 [Play Demo Video](https://github.com/attendance1978-wq/movie/raw/main/demo.mp4)
+
 
 
 
