@@ -39,9 +39,9 @@ A full-featured movie streaming platform built with Node.js, Express, and MySQL.
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/attendance1978-wq/movie.git
 
-cd movie-streaming-system
+cd movie
 
 ```
 ## 📸 Screenshots
@@ -54,6 +54,7 @@ cd movie-streaming-system
 
 ## demo videos here
 [Play Demo Video](https://github.com/attendance1978-wq/movie/raw/main/demo.mp4)
+
 
 
 
